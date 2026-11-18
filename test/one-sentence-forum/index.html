@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>光圈社区 / 一句话调用测试</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="#home">光圈社区</a><nav><a href="#home">首页</a><a href="#latest">最新主题</a><a href="#guides">新手指南</a></nav><button id="new-topic" type="button">发布主题</button></header>
+  <main id="app">
+    <section class="mast"><p class="eyebrow">PHOTOGRAPHY COMMUNITY / 2026</p><h1>把照片带进<br><em>一场有回应的讨论。</em></h1><p class="intro">给正在拍摄、编辑和学习的人，一个可以找到答案，也可以留下经验的地方。</p><label class="search"><span>⌕</span><input id="search" type="search" placeholder="搜索主题、标签或关键词" aria-label="搜索主题"></label></section>
+    <section class="forum-layout" id="home"><aside class="categories"><p class="side-label">浏览分区</p><button class="category is-active" data-category="all" type="button">全部主题 <b>24</b></button><button class="category" data-category="器材" type="button">器材与设置 <b>8</b></button><button class="category" data-category="后期" type="button">后期与色彩 <b>6</b></button><button class="category" data-category="创作" type="button">创作方法 <b>10</b></button></aside><section class="thread-list"><div class="list-head"><div><p class="side-label">社区讨论</p><h2 id="list-title">最新主题</h2></div><div class="views"><button class="view is-active" type="button">最新</button><button class="view" type="button">未读</button><button class="view" type="button">热门</button></div></div><div id="threads"></div><p id="empty" hidden>没有找到匹配主题。</p></section><aside class="community-note"><p class="side-label">本周提示</p><h2>先说你<br>看见了什么。</h2><p>具体的观察比一句“怎么拍”更容易得到有用回复。</p><a href="#guides">查看新手指南 →</a></aside></section>
+    <section id="guides" class="guide"><p class="side-label">新手指南</p><h2>一张照片，<br>从问题开始。</h2><p>描述光线、镜头和你想保留的感觉，再把成片放进讨论。这里的内容仅用于展示论坛信息结构。</p></section>
+  </main>
+  <footer>原创虚构内容 · FrontArt 一句话调用测试</footer>
+  <script src="app.js" defer></script>
+</body>
+</html>

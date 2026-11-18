@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111412">
+  <meta name="description" content="FrontArt 是一套可搜索的前端设计配方库与 AI Skill。浏览真实风格案例，用一句话调用配方，为网站和手机原型找到有创意的视觉方向。">
+  <link rel="canonical" href="https://frontart.fendouweiqian.top/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Noto+Serif+SC:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="catalog.css">
+  <title>FrontArt Design — 给界面一个真正的视觉方向</title>
+</head>
+<body>
+  <a class="skip-link" href="#library">跳到风格库</a>
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="FrontArt 首页"><span class="mark">F</span><span>frontart<span class="wordmark-dot">.</span></span></a>
+    <nav class="main-nav" aria-label="主导航">
+      <a href="recipes.html">配方库</a>
+      <a href="#how">工作方式</a>
+      <a href="#skill">Skill</a>
+    </nav>
+    <a class="header-cta" href="#library">浏览配方 <span aria-hidden="true">↘</span></a>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-art" aria-hidden="true">
+        <div class="hero-photo"></div>
+        <div class="hero-stamp">FORM<br>FOLLOWS<br>FEELING</div>
+        <div class="hero-ribbon">DESIGN WITH INTENT <span>✳</span> DESIGN WITH INTENT <span>✳</span></div>
+        <span class="hero-index">F / 001 — 026</span>
+      </div>
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> FRONTEND ART DIRECTION / 01—26</p>
+        <h1 id="hero-title">别再让每个<br>网站看起来<br><em>像同一个。</em></h1>
+        <div class="hero-bottom">
+          <p>从真实网站和优秀主题里拆出视觉方法，<br>组合成能直接交给 AI 的设计配方。</p>
+          <a class="round-link" href="#library" aria-label="探索设计配方">↓</a>
+        </div>
+        <div class="hero-meta"><span>WEB + PHONE PROTOTYPES</span><span>可检索 · 可预览 · 可复制</span></div>
+      </div>
+      <div class="hero-side-note">A LIBRARY<br>OF VISUAL<br>DECISIONS</div>
+    </section>
+
+    <section class="manifesto" id="how">
+      <p class="section-index">01 / THE IDEA</p>
+      <h2>不是再写一句“做得更好看”。<br><span>是先找到属于这个产品的视觉逻辑。</span></h2>
+      <div class="manifesto-notes">
+        <p>优秀界面背后有清晰的取舍：信息如何排列，图像怎样成为主角，交互如何反馈。FrontArt 把这些决定整理成一张张配方，让 AI 有具体的设计依据。</p>
+        <span>REAL REFERENCES<br>→ USABLE RECIPES</span>
+      </div>
+    </section>
+
+    <section class="library-section featured-section" id="library" aria-labelledby="library-title">
+      <div class="library-heading">
+        <div><p class="section-index">02 / SELECTED RECIPES</p><h2 id="library-title">从一种视觉<br><em>开始探索。</em></h2></div>
+        <div class="library-intro-block"><p class="library-intro">每张配方都来自可核验的公开参考，提炼布局、配色与信息组织方式。进入完整配方库继续搜索。</p><a class="catalog-link" href="recipes.html">浏览全部配方 <span aria-hidden="true">↗</span></a></div>
+      </div>
+      <div class="results-bar"><span id="results-count" aria-live="polite">精选配方</span><span>网站 · 内容 · 商业 · 通用手机原型</span></div>
+      <div class="recipe-grid" id="recipe-grid" data-mode="featured"></div>
+      <p class="empty-state" id="empty-state" hidden>没有找到匹配的配方。试试更短的关键词。</p>
+    </section>
+
+    <section class="workflow">
+      <div class="workflow-heading"><p class="section-index">03 / FROM REFERENCE TO RESULT</p><h2>从灵感，到<br><em>可以运行的界面。</em></h2></div>
+      <div class="workflow-list">
+        <article><span>01</span><div><h3>挑一张配方</h3><p>按网站类型、媒介和视觉特征检索，不需要从一百个风格名里猜。</p></div><b>↗</b></article>
+        <article><span>02</span><div><h3>带上你的产品事实</h3><p>提示词会要求 AI 先理解真实用户任务，再决定哪些设计规律适合借用。</p></div><b>↗</b></article>
+        <article><span>03</span><div><h3>生成并实际验收</h3><p>把配方落成可运行页面或通用手机原型，检查素材、交互和窄屏表现。</p></div><b>↗</b></article>
+      </div>
+    </section>
+
+    <section class="skill-band" id="skill">
+      <div class="skill-graphic" aria-hidden="true"><span>F</span><i>✳</i></div>
+      <div class="skill-copy"><p class="section-index">04 / THE SKILL</p><h2>一个会做视觉判断的<br><em>前端设计 Skill。</em></h2><p>把配方带进 Codex、Cursor 或 Claude Code。安装后只需一句话指定风格和产品任务，Skill 会按项目上下文检索规律，再把它们转成实际的页面结构、素材选择和交互要求。</p></div>
+      <div class="install-box"><span>INSTALL / REPOSITORY PREVIEW</span><code>Skill source is available in this project</code><a href="skill/SKILL.md" aria-label="查看 Skill 文件" title="查看 Skill 文件">↗</a><small>GitHub 仓库地址将在发布后补充</small></div>
+    </section>
+  </main>
+  <footer class="site-footer"><a class="wordmark" href="#top"><span class="mark">F</span><span>frontart<span class="wordmark-dot">.</span></span></a><span>视觉不是装饰，是一连串有根据的决定。</span><a href="recipes.html">浏览配方库 ↗</a><a href="skill/SKILL.md">查看 Skill ↗</a><small>© 2026 FRONTART DESIGN</small></footer>
+  <script src="app.js" defer></script>
+</body>
+</html>

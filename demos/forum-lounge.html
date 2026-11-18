@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="社区讨论二级页面原型：查看完整话题、浏览回复、关注并继续参与讨论。">
+  <title>讨论详情 / 社区论坛目录</title>
+  <link rel="stylesheet" href="demo.css">
+  <link rel="stylesheet" href="forum-home.css">
+  <script src="demo.js" defer></script>
+  <script src="forum-topic.js" defer></script>
+</head>
+<body class="forum-demo forum-topic-page" data-recipe="forum-lounge">
+  <header class="forum-topbar">
+    <div class="forum-topbar-inner">
+      <a class="forum-back-to-list" href="forum-home.html" aria-label="返回话题目录">←</a>
+      <a class="forum-brand" href="forum-home.html" aria-label="Commons 社区首页"><span class="forum-brand-mark">F</span><b>COMMONS</b></a>
+      <a class="forum-search-link" href="forum-home.html#topics"><span aria-hidden="true">⌕</span><span>搜索社区话题</span></a>
+      <div class="forum-topbar-actions">
+        <a class="forum-recipe-return" href="../recipes/demo.html?style=forum-lounge">配方说明</a>
+        <button class="forum-language" type="button">简体中文⌄</button>
+        <button class="forum-user" type="button" aria-label="演示用户">林</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="forum-topic-page-main">
+    <section class="topic" id="topic">
+      <div class="topic-crumb"><a href="forum-home.html">所有话题</a><span>›</span><a href="forum-home.html#topics" id="topic-category-crumb">设计与前端</a></div>
+      <div class="topic-toolbar"><a href="forum-home.html">← 返回话题目录</a><button id="watch" type="button">☆ 关注话题</button></div>
+      <article class="topic-post">
+        <div class="topic-title-block">
+          <span class="topic-category-label" id="topic-category-label">设计与前端</span>
+          <h1>怎样让一个实用工具站也有自己的视觉语言？</h1>
+          <div class="topic-head"><span class="topic-avatar">林</span><div><div class="topic-author"><b>lin</b><span>新加入</span></div><small>发布于 18 分钟前 · 最后活动 8 分钟前</small></div></div>
+        </div>
+        <div class="topic-body">
+          <p>最近在重构一组在线工具。功能都是小任务，但每个页面一眼看过去都像同一个模板：标题、三列卡片、紫色渐变。</p>
+          <p>我想先从真实的使用环境出发。有人会先看内容和操作顺序，有人会找摄影或编辑排版参考。怎么把参考变成可用规则，而不是照抄页面？</p>
+          <blockquote>先定用户任务，再让版式承担这个任务。风格是决策的结果。</blockquote>
+          <div class="topic-actions"><button type="button" id="topic-like">♡ 喜欢</button><button type="button" id="reply">↩ 回复</button><button type="button" id="topic-share">↗ 分享</button></div>
+        </div>
+      </article>
+
+      <div class="topic-timeline"><span><b>2</b> 条回复</span><span>按时间排序</span></div>
+      <section class="replies" aria-label="话题回复" id="post-replies">
+        <article><span class="reply-avatar reply-blue">鹭</span><div><div class="reply-head"><b>鹭</b><small>12 分钟前 · 摄影与视觉</small></div><p>我会先看用户打开页面第一件事要做什么，再选是工作台、目录还是内容阅读的结构。</p><button type="button">♡ 4　　↩ 回复</button></div></article>
+        <article><span class="reply-avatar reply-orange">周</span><div><div class="reply-head"><b>周末造物</b><small>8 分钟前 · 独立开发者</small></div><p>素材要真实且有来源。要是产品并不需要照片，就别为了反 AI 硬加一张不相关的背景。</p><button type="button">♡ 2　　↩ 回复</button></div></article>
+      </section>
+      <form class="topic-reply-form" id="reply-box">
+        <label for="topic-reply">回复这个话题</label>
+        <textarea id="topic-reply" rows="3" placeholder="分享你的经验或想法…"></textarea>
+        <div><span>请保持友善，让讨论继续下去。</span><button id="send-reply" type="button">发布回复</button></div>
+      </form>
+      <p class="forum-disclaimer">原创交互原型 · 话题和账号均为虚构示例</p>
+    </section>
+  </main>
+</body>
+</html>

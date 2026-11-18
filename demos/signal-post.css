@@ -1,0 +1,21 @@
+.signal-detail .signal-detail-title{height:54px;position:sticky;top:0;z-index:4;display:flex;align-items:center;gap:26px;padding:0 16px;border-bottom:1px solid #eff1f2;background:rgba(255,255,255,.97);backdrop-filter:blur(12px)}
+.signal-detail-title a{color:#0f1419;font-size:24px}
+.signal-detail-title h1{margin:0;color:#0f1419;font-size:20px}
+.signal-post{padding:21px 16px 17px;border-bottom:1px solid #eff1f2}
+.signal-post-head{display:flex;align-items:center;gap:11px;margin-bottom:14px;color:#0f1419;font-size:15px}
+.signal-post-head>span{width:43px;height:43px;display:grid;place-items:center;border-radius:50%;background:#c7e2e2;color:#17414a;font-weight:700}
+.signal-post-head small{display:block;margin-top:4px;color:#627583;font-size:13px}
+.signal-post>p{margin:0 0 17px;color:#0f1419;font-size:18px;line-height:1.65;white-space:pre-wrap;overflow-wrap:anywhere}
+.signal-post>small{display:block;padding-bottom:16px;border-bottom:1px solid #eff1f2;color:#6b7b86;font-size:13px}
+.signal-post-actions{display:flex;gap:25px;margin-top:11px}
+.signal-post-actions button{min-height:38px;padding:0 9px;border:0;border-radius:6px;background:transparent;color:#627583;font-size:13px}
+.signal-post-actions button:hover{background:#eff8fb;color:#168ac0}
+.signal-discussion{padding:21px 16px 70px}
+.signal-discussion h2{margin:0 0 11px;color:#0f1419;font-size:18px}
+.signal-discussion article{padding:15px 0;border-top:1px solid #eff1f2;color:#0f1419;font-size:14px}
+.signal-discussion article p{margin:7px 0 0;color:#39454d;font-size:15px;line-height:1.7}
+.signal-discussion form{margin-top:19px}
+.signal-discussion form label{font-size:14px}
+.signal-discussion form textarea{margin-top:10px}
+.signal-discussion form button{min-height:38px;margin-top:10px;padding:0 16px;border:0;border-radius:999px;background:#0f1419;color:white;font-size:14px;font-weight:700}
+@media(max-width:600px){.signal-post{padding:18px 14px}.signal-post>p{font-size:17px}.signal-discussion{padding-right:14px;padding-left:14px}}

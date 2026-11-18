@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <title>FrontArt Design 配方演示</title>
+  <style>body{padding:38px 6vw}.demo-head{max-width:860px;margin:0 auto 26px}.demo-head a{color:var(--lime);font:11px var(--mono)}.demo-head h1{font-size:43px;margin:23px 0 12px}.demo-head p{color:#a9afa6;line-height:1.8;font-size:13px}.demo-frame{width:min(100%,1180px);height:calc(100vh - 190px);min-height:580px;margin:auto;border:1px solid var(--rule);background:#fff}.demo-frame iframe{display:block;width:100%;height:100%;border:0}@media(max-width:600px){body{padding:22px 4vw}.demo-head h1{font-size:34px}.demo-frame{height:calc(100vh - 220px);min-height:560px}}</style>
+</head>
+<body>
+  <main><header class="demo-head"><a href="recipes.html">← 返回配方库</a><h1 id="demo-title">设计配方 Demo</h1><p id="demo-description">点击首页或列表内容，进入二级页面并体验一条核心流程。</p></header><div class="demo-frame"><iframe id="demo-frame" title="设计配方交互式演示" src="demos/signal-feed.html"></iframe></div></main>
+  <script>
+    const names={"signal-feed":"实时信号流","forum-lounge":"深夜论坛客厅","topic-board":"兴趣主题广场","field-journal":"影像田野笔记","longform-review":"纸上长文档案","swiss-index":"瑞士信息索引","astra-studio":"模块化工作室首页","blocksy-commerce":"独立商店橱窗","generatepress-journal":"轻量出版物","object-campaign":"物件品牌影像页","neobrutal-tool":"新粗野主义工具间","pocket-catalog":"口袋收藏册"};
+    const interactive=new Set(["signal-feed","forum-lounge","topic-board","pocket-catalog"]);
+    const params=new URLSearchParams(location.search);const selected=params.get("style");if(names[selected]){document.querySelector("#demo-title").textContent=names[selected];document.querySelector("#demo-frame").src=selected==="forum-lounge"?"demos/forum-home.html":interactive.has(selected)?`demos/${selected}.html`:`demos/visual-recipe.html?style=${selected}`}
+  </script>
+</body>
+</html>

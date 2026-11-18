@@ -1,0 +1,6 @@
+.preview-tools{display:flex;align-items:center;gap:25px}
+.preview-tools>span{color:#929a8f;font:12px var(--mono)}
+.preview-tools>a{color:var(--lime);font:12px var(--mono);border-bottom:1px solid var(--lime);padding-bottom:5px}
+.preview-tools>a:hover{color:#d7ff85}
+.preview-flow{max-width:1480px;margin:14px auto 0;color:var(--lime);font:12px/1.7 var(--mono)}
+@media(max-width:600px){.preview-toolbar{align-items:flex-start;gap:16px}.preview-tools{align-items:flex-end;flex-direction:column;gap:8px}.preview-tools>span{font-size:12px}.preview-tools>a{font-size:12px}.preview-flow{padding:0 5vw}}

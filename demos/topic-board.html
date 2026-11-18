@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>兴趣主题广场 / FrontArt Demo</title>
+  <link rel="stylesheet" href="demo.css?v=20261104-2">
+  <link rel="stylesheet" href="topic-board.css?v=20261104-2">
+</head>
+<body class="topic-demo">
+  <header class="tieba-top">
+    <a class="tieba-brand" href="../recipes.html" target="_top"><span>F</span> 设计讨论</a>
+    <label class="tieba-search">⌕ <input id="topic-search" type="search" placeholder="搜索主题或讨论"></label>
+    <button id="start-topic" type="button">＋ 发起讨论</button>
+  </header>
+  <main class="tieba-layout" id="discover">
+    <aside class="tieba-left">
+      <nav class="tieba-nav">
+        <a class="selected" href="#discover">⌂ <span>首页</span></a>
+        <a href="#topic-compose" id="my-space-link">○ <span>我的讨论</span></a>
+      </nav>
+      <section>
+        <h2>我常逛的主题</h2>
+        <a href="#topic-list" data-topic-filter="all"><i>设</i> 设计与前端</a>
+        <a href="#topic-list" data-topic-filter="字体"><i>字</i> 字体观察</a>
+        <a href="#topic-list" data-topic-filter="摄影"><i>摄</i> 摄影笔记</a>
+        <a href="#topic-list" data-topic-filter="创作"><i>独</i> 独立创作</a>
+        <a class="more-communities" href="#topic-list" data-topic-filter="all">展开更多主题　⌄</a>
+      </section>
+      <section class="new-member">
+        <small>刚到这里？</small>
+        <b>加入一个主题，<br>看看大家在聊什么。</b>
+        <button id="guide" type="button">新手指南</button>
+      </section>
+    </aside>
+    <section class="tieba-feed">
+      <div class="feed-tabs">
+        <button class="active" data-sort="recommended" type="button">推荐</button>
+        <button data-sort="newest" type="button">最新</button>
+        <button data-sort="following" type="button">关注</button>
+        <button id="join-main" type="button">＋ 加入设计与前端</button>
+      </div>
+      <div class="feed-context"><span>设计与前端吧</span><span>创作 · 交互 · 开发</span></div>
+      <form class="topic-compose" id="topic-compose" hidden>
+        <label for="topic-text">分享一个正在讨论的问题</label>
+        <textarea id="topic-text" rows="3" placeholder="写下你的想法…"></textarea>
+        <button type="submit">发布讨论</button>
+      </form>
+      <div class="topic-stream" id="topic-list"></div>
+    </section>
+    <aside class="tieba-right">
+      <section class="right-panel">
+        <h2>正在热聊</h2>
+        <ol>
+          <li><b>01</b><span>让一个小工具有自己的视觉性格</span><i>热</i></li>
+          <li><b>02</b><span>最近发现的中文字体组合</span><i>新</i></li>
+          <li><b>03</b><span>作品集首页应该先放什么？</span></li>
+          <li><b>04</b><span>把侧项目重新做了一遍</span></li>
+          <li><b>05</b><span>分享一组编辑设计观察</span></li>
+        </ol>
+        <a href="#topic-list">查看更多讨论　›</a>
+      </section>
+      <section class="right-panel popular-communities">
+        <h2>大家常去的主题</h2>
+        <a href="#topic-list" data-topic-filter="字体"><i>排</i><span><b>排版与字体</b><small>字形、网格和阅读</small></span></a>
+        <a href="#topic-list" data-topic-filter="交互"><i>UI</i><span><b>界面观察</b><small>产品与交互设计</small></span></a>
+        <a href="#topic-list" data-topic-filter="摄影"><i>影</i><span><b>影像手记</b><small>摄影与视觉叙事</small></span></a>
+      </section>
+    </aside>
+  </main>
+  <script src="demo.js?v=20261104-2" defer></script>
+</body>
+</html>

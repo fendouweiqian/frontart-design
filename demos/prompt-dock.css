@@ -1,0 +1,22 @@
+.prompt-dock{position:fixed;right:26px;bottom:24px;z-index:20;font-family:Arial,"Microsoft YaHei",sans-serif}.prompt-dock-toggle{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:0 17px;border:1px solid rgba(255,255,255,.24);border-radius:999px;background:#c5f45f;color:#10150f;box-shadow:0 10px 28px rgba(0,0,0,.22);font-size:14px;font-weight:700}.prompt-dock-toggle span{font-size:18px}.prompt-dock-panel{position:absolute;right:0;bottom:62px;width:min(560px,calc(100vw - 32px));max-height:min(680px,calc(100vh - 110px));overflow:auto;padding:25px;background:#131813;color:#f1f4ec;border:1px solid #536050;box-shadow:0 18px 50px rgba(0,0,0,.34)}.prompt-dock-panel[hidden]{display:none}.prompt-dock-head{display:flex;justify-content:space-between;gap:18px;align-items:flex-start}.prompt-dock-head small{color:#c5f45f;font:10px/1.4 ui-monospace,SFMono-Regular,Consolas,monospace}.prompt-dock-head h2{margin:9px 0 0;font:600 23px/1.35 Arial,"Microsoft YaHei",sans-serif}.prompt-dock-close{width:32px;height:32px;border:1px solid #667260;background:transparent;color:#f1f4ec;font-size:22px;line-height:1}.prompt-dock-panel>p{margin:18px 0;color:#c4cbc0;font-size:14px;line-height:1.75}.prompt-dock-panel pre{max-height:365px;overflow:auto;margin:0;padding:17px;border:1px solid #394437;background:#0b0f0c;color:#f5f7f2;white-space:pre-wrap;overflow-wrap:anywhere;font:15px/1.8 Arial,"Microsoft YaHei",sans-serif}.prompt-dock-copy{margin-top:16px;min-height:44px;padding:0 17px;border:0;background:#c5f45f;color:#10150f;font-size:14px;font-weight:700}.prompt-dock-panel>a{display:block;margin-top:18px;color:#c5f45f;font-size:13px}.feed-demo .prompt-dock-panel{background:#13161a;border-color:#48515b}.feed-demo .prompt-dock-toggle,.feed-demo .prompt-dock-copy{background:#1d9bf0;color:#fff}.forum-demo .prompt-dock-toggle,.forum-demo .prompt-dock-copy{background:#386ef4;color:#fff}
+@media(max-width:600px){.prompt-dock{right:14px;bottom:14px}.prompt-dock-toggle{min-height:45px;font-size:13px}.prompt-dock-panel{right:-1px;bottom:58px;width:calc(100vw - 28px);max-height:calc(100vh - 88px);padding:20px}.prompt-dock-head h2{font-size:20px}.prompt-dock-panel>p{font-size:14px}.prompt-dock-panel pre{font-size:14px;line-height:1.75;max-height:48vh}}
+.prompt-dock-copy{position:sticky;bottom:0;width:100%;min-height:46px}
+.forum-demo .prompt-dock-toggle,.forum-demo .prompt-dock-copy{background:#168ac0;color:#fff}
+@media(max-width:600px){
+  .prompt-dock-panel>p{font-size:15px}
+  .prompt-dock-panel pre{font-size:16px;line-height:1.7}
+  .feed-demo .prompt-dock{right:auto;left:14px;bottom:76px}
+  .feed-demo .prompt-dock-panel{right:auto;left:0;max-height:calc(100vh - 160px)}
+}
+.prompt-dock-panel{width:min(600px,calc(100vw - 32px));max-height:min(720px,calc(100vh - 110px))}
+.prompt-dock-panel pre{max-height:420px;font:16px/1.8 "Microsoft YaHei","PingFang SC","Noto Sans SC",Arial,sans-serif;letter-spacing:0}
+@media(max-width:600px){.prompt-dock-panel{max-height:calc(100vh - 88px)}.prompt-dock-panel pre{font-size:16px;line-height:1.75;max-height:48vh}}
+@media(max-width:600px){.prompt-dock-toggle{min-height:42px;padding:0 12px;font-size:13px}.prompt-dock-toggle span{font-size:17px}.prompt-dock-panel>p{font-size:15px;line-height:1.75}}
+@media(max-width:700px){
+  .feed-demo .prompt-dock,.forum-demo .prompt-dock{position:static;left:auto;right:auto;bottom:auto;z-index:auto}
+  .feed-demo .prompt-dock-toggle,.forum-demo .prompt-dock-toggle{min-height:36px;padding:0 10px;font-size:12px;box-shadow:none}
+  .feed-demo .prompt-dock-panel,.forum-demo .prompt-dock-panel{position:fixed;top:58px;right:12px;bottom:auto;left:auto;width:calc(100vw - 24px);max-height:calc(100dvh - 72px)}
+  .feed-demo .feed-mobile-head .feed-mobile-brand{margin-right:auto}
+  .feed-demo .feed-mobile-head>span{display:none}
+  .forum-demo .forum-recipe-return{display:none}
+}

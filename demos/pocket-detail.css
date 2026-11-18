@@ -1,0 +1,25 @@
+.phone-topline{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;font-weight:700;font-size:15px}
+.phone-topline span{font:9px monospace;color:#798472;font-weight:400}
+.pocket-demo .phone-content{padding-top:22px}
+.pocket-demo .collection-feature{color:#20251f}
+.pocket-demo .saved-row>a{flex:1;min-width:0}
+.pocket-demo .saved-row>a:hover b{text-decoration:underline}
+.pocket-demo .phone-nav a{color:#81877b;font-size:17px;text-align:center}
+.pocket-demo .phone-nav a small{display:block;font-size:8px;margin-top:4px}
+.pocket-demo .phone-shell{border-radius:25px;border-width:6px}
+.pocket-demo .phone-detail-shell{background:#faf9f4}
+.phone-detail-content{height:calc(100% - 70px);overflow-y:auto;padding-bottom:45px!important}
+.phone-detail-content .phone-topline>a{font-size:24px;font-family:Arial,sans-serif}
+.pocket-cover{height:230px;background:#c9dfb8;display:flex;flex-direction:column;justify-content:space-between;padding:17px;position:relative;overflow:hidden}
+.pocket-cover::after{content:"";position:absolute;right:-20px;bottom:-55px;width:170px;height:170px;border-radius:50%;background:#f4dd95;filter:blur(18px)}
+.pocket-cover span{font:9px monospace;color:#3f543f;z-index:1}
+.pocket-cover strong{font:600 27px/1.4 Georgia,serif;z-index:1}
+.pocket-cover.interface{background:#a8b7b0;color:#13241d}.pocket-cover.interface::after{background:#e7d1aa}
+.pocket-article{padding-top:24px}
+.pocket-article>small{font:9px monospace;color:#6f8a5d}
+.pocket-article h1{font:600 24px/1.35 Georgia,serif;margin:13px 0}
+.pocket-article p{font-size:13px;line-height:1.9;color:#596255}
+.pocket-article .save-toggle{font-size:23px;padding:0;margin-top:10px}
+.pocket-save-label{font-size:10px;color:#7b8675;margin-left:7px}
+.pocket-article>a{display:block;margin-top:26px;border-top:1px solid #d9ded4;padding-top:20px;font-size:11px;color:#49693d}
+@media(max-width:420px){.pocket-demo .phone-shell{height:calc(100vh - 88px)}.pocket-detail-content{height:calc(100% - 65px)}.pocket-cover{height:210px}}

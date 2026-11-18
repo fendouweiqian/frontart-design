@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="实时信号流动态详情原型：阅读原动态、点赞和回复。">
+  <title>动态详情 / 实时信号流</title>
+  <link rel="stylesheet" href="demo.css">
+  <link rel="stylesheet" href="signal-feed.css">
+  <link rel="stylesheet" href="signal-post.css">
+  <script src="demo.js" defer></script>
+</head>
+<body class="feed-demo signal-detail" data-recipe="signal-feed">
+  <header class="feed-mobile-head"><a href="signal-feed.html" class="feed-mobile-brand">←</a><span>动态</span><a href="../recipes/demo.html?style=signal-feed">配方</a></header>
+  <main class="feed-layout">
+    <aside class="feed-navigation">
+      <div class="brand-x" aria-label="Signal 社区"><strong>F</strong></div>
+      <nav aria-label="主导航">
+        <a aria-label="首页" href="signal-feed.html"><span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v9a2 2 0 0 1-2 2h-4v-6H9v6H5a2 2 0 0 1-2-2z"/></svg></span><b>首页</b></a>
+        <a aria-label="探索" href="signal-feed.html#topics"><span aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg></span><b>探索</b></a>
+        <a aria-label="通知" href="signal-feed.html#topics"><span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M18 9a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"/><path d="M10 21h4"/></svg></span><b>通知</b></a>
+        <a aria-label="私信" href="signal-feed.html"><span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5h16v12H9l-5 4z"/><path d="M8 9h8M8 13h5"/></svg></span><b>私信</b></a>
+        <a aria-label="书签" href="signal-feed.html#saved"><span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 4h12v17l-6-4-6 4z"/></svg></span><b>书签</b></a>
+        <a aria-label="个人资料" href="signal-feed.html#profile"><span aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></span><b>个人资料</b></a>
+      </nav>
+      <div class="mini-profile"><span>林</span><div><b>林间风</b><small>@lin-design</small></div></div>
+      <a class="recipe-exit" href="../recipes/demo.html?style=signal-feed">返回配方说明</a>
+    </aside>
+    <section class="feed-column">
+      <div class="signal-detail-title"><a href="signal-feed.html" aria-label="返回时间线">←</a><h1>动态</h1></div>
+      <article id="signal-post" class="signal-post"></article>
+      <div class="signal-discussion">
+        <h2>讨论</h2>
+        <div id="post-replies"><article><b>鹭</b><p>先把操作顺序放回用户的工作流里，视觉也会更有根据。</p></article><article><b>野原</b><p>同意。信息密度和留白可以随着任务变化。</p></article></div>
+        <form id="signal-reply-form"><label for="signal-reply-text">加入讨论</label><textarea id="signal-reply-text" rows="3" placeholder="写下你的想法…"></textarea><button type="submit">发布回复</button></form>
+      </div>
+    </section>
+    <aside class="right-rail">
+      <label class="feed-search"><span aria-hidden="true">⌕</span><input id="feed-search" type="search" placeholder="搜索"></label>
+      <section class="trend-panel"><h2>相关趋势</h2><a href="signal-feed.html#topics"><b># 让界面更像一本刊物</b></a><a href="signal-feed.html#topics"><b># 独立开发日志</b></a></section>
+    </aside>
+  </main>
+</body>
+</html>

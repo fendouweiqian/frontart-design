@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111412">
+  <meta name="description" content="搜索和筛选 FrontArt Design 的视觉配方。查看公开网站与主题中提炼的布局、配色和交互规律，并复制可直接使用的设计提示词。">
+  <link rel="canonical" href="https://frontart.fendouweiqian.top/recipes.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Noto+Serif+SC:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="catalog.css">
+  <title>设计配方库 — FrontArt Design</title>
+</head>
+<body class="catalog-page">
+  <a class="skip-link" href="#library">跳到配方列表</a>
+  <header class="site-header">
+    <a class="wordmark" href="index.html#top" aria-label="FrontArt 首页"><span class="mark">F</span><span>frontart<span class="wordmark-dot">.</span></span></a>
+    <nav class="main-nav" aria-label="主导航">
+      <a href="index.html#how">工作方式</a>
+      <a href="index.html#skill">Skill</a>
+    </nav>
+    <a class="header-cta" href="index.html">返回首页 <span aria-hidden="true">↗</span></a>
+  </header>
+  <main id="top">
+    <section class="catalog-intro" aria-labelledby="catalog-title">
+      <p class="section-index">02 / THE RECIPE LIBRARY</p>
+      <div class="catalog-intro-row">
+        <h1 id="catalog-title">为界面，找到<br><em>另一种视觉逻辑。</em></h1>
+        <p>从公开网站、主题与设计传统中提炼页面规律。按类型、设备或视觉特征搜索，进入单条配方查看 Demo 和完整提示词。</p>
+      </div>
+      <div class="catalog-stats"><span><b id="catalog-total">12</b> 款配方</span><span>WEB · CONTENT · COMMERCE · MOBILE</span></div>
+    </section>
+    <section class="library-section catalog-library" id="library" aria-label="可搜索的设计配方">
+      <div class="catalog-controls">
+        <label class="search-box"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="搜风格、场景、来源、视觉特征…" autocomplete="off"><kbd>/</kbd></label>
+        <div class="filter-row" id="filters" role="group" aria-label="按类型筛选"></div>
+      </div>
+      <div class="results-bar"><span id="results-count" aria-live="polite">12 款配方</span><span>每条包含参考、视觉规律与提示词</span></div>
+      <div class="recipe-grid" id="recipe-grid" data-mode="all"></div>
+      <p class="empty-state" id="empty-state" hidden>没有找到匹配的配方。试试更短的关键词。</p>
+    </section>
+    <section class="catalog-notes">
+      <span>REFERENCE → RECIPE → DEMO</span>
+      <p>参考用于校准视觉语言。品牌标识、原文与专属素材不会直接搬用；交互可以精简，但页面的布局、色彩和信息层级要有明确依据。</p>
+    </section>
+  </main>
+  <footer class="site-footer"><a class="wordmark" href="index.html#top"><span class="mark">F</span><span>frontart<span class="wordmark-dot">.</span></span></a><span>视觉不是装饰，是一连串有根据的决定。</span><a href="skill/SKILL.md">查看 Skill ↗</a><small>© 2026 FRONTART DESIGN</small></footer>
+  <script src="app.js" defer></script>
+</body>
+</html>

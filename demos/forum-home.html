@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="社区论坛目录原型：搜索、横向话题视图、分类与二级讨论页面。">
+  <title>社区论坛目录 / 最新话题</title>
+  <link rel="stylesheet" href="demo.css">
+  <link rel="stylesheet" href="forum-home.css">
+  <script src="demo.js" defer></script>
+</head>
+<body class="forum-demo forum-home" data-recipe="forum-lounge">
+  <header class="forum-topbar">
+    <div class="forum-topbar-inner">
+      <button class="forum-menu" id="forum-menu-toggle" type="button" aria-label="打开社区导航" aria-expanded="false" aria-controls="forum-menu-panel">☰</button>
+      <a class="forum-brand" href="forum-home.html" aria-label="Commons 社区首页"><span class="forum-brand-mark">F</span><b>COMMONS</b></a>
+      <div class="forum-topbar-actions">
+        <a class="forum-recipe-return" href="../recipes/demo.html?style=forum-lounge">配方说明</a>
+        <button class="forum-language" type="button">简体中文⌄</button>
+        <button class="forum-user" type="button" aria-label="演示用户">林</button>
+      </div>
+      <nav class="forum-menu-panel" id="forum-menu-panel" aria-label="社区快捷导航" hidden>
+        <button type="button" data-forum-view="latest">最新话题</button>
+        <button type="button" data-forum-view="unread">未读话题</button>
+        <button type="button" data-forum-view="new">新话题</button>
+        <button type="button" data-forum-view="hot">热门讨论</button>
+        <a href="../recipes/demo.html?style=forum-lounge">查看配方说明</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="forum-page">
+    <section class="forum-hero" aria-label="社区搜索">
+      <p>COMMONS / OPEN DISCUSSIONS</p>
+      <h1>让想法在这里相遇</h1>
+      <label class="forum-global-search"><span aria-hidden="true">⌕</span><input id="forum-search" type="search" placeholder="搜索话题、分类或作者" aria-label="搜索话题、分类或作者"><kbd>↵</kbd></label>
+    </section>
+
+    <div class="forum-content" id="topics">
+      <div class="forum-announcement"><span class="announcement-mark">i</span><p><b>社区公告</b>　尊重彼此的经验，让每一场讨论都有继续下去的空间。</p></div>
+
+      <div class="forum-toolbar">
+        <div class="forum-filter-buttons" aria-label="分类与标签筛选">
+          <span>类别</span>
+          <button class="active" type="button" data-forum-filter="all">全部</button>
+          <button type="button" data-forum-filter="设计与前端">设计与前端</button>
+          <button type="button" data-forum-filter="开发实践">开发实践</button>
+          <button type="button" data-forum-filter="作品反馈">作品反馈</button>
+        </div>
+        <nav class="forum-topic-tabs" aria-label="话题视图">
+          <button class="active" type="button" data-forum-view="latest">最新</button>
+          <button type="button" data-forum-view="new">新话题</button>
+          <button type="button" data-forum-view="unread">未读</button>
+          <button type="button" data-forum-view="hot">热门</button>
+          <button type="button" data-forum-view="leaderboard">排行榜</button>
+          <button type="button" data-forum-view="mine">我的话题</button>
+        </nav>
+        <button class="forum-new-topic" id="forum-new-topic" type="button"><span aria-hidden="true">＋</span> 新建话题</button>
+      </div>
+
+      <form class="forum-compose" id="forum-compose" hidden>
+        <label for="forum-compose-title">新话题标题</label>
+        <input id="forum-compose-title" required maxlength="100" placeholder="写一个清楚的问题或想法">
+        <label for="forum-compose-body">补充说明</label>
+        <textarea id="forum-compose-body" rows="3" placeholder="提供上下文，让其他人能参与讨论…"></textarea>
+        <button type="submit">发布话题</button>
+      </form>
+
+      <div class="forum-new-activity"><span></span><a href="#forum-topic-list">查看新加入的讨论</a></div>
+      <div class="forum-table-heading"><span>话题</span><span aria-hidden="true"></span><span>回复</span><span>浏览量</span><span>活动</span></div>
+      <div class="forum-topic-list" id="forum-topic-list">
+        <a class="forum-list-row" data-forum-topic data-category="设计与前端" data-replies="18" data-unread="true" data-mine="false" data-activity="4" data-new="1" href="forum-lounge.html">
+          <div class="forum-topic-main"><small><i class="category-dot dot-blue"></i>设计与前端 <span>·</span> 创作</small><strong>怎样让一个实用工具站也有自己的视觉语言？</strong><div class="forum-topic-tags"><span>界面设计</span><span>独立开发</span></div><span class="forum-mobile-activity">lin · 8 分钟前有新回复</span></div>
+          <span class="forum-participants" aria-label="参与讨论：林、鹭、周"><i>林</i><i>鹭</i><i>周</i><span>+4</span></span>
+          <span class="forum-reply-count"><b>18</b><small>回复</small></span><span class="forum-view-count">1.2k</span><span class="forum-activity"><i>鹭</i><span>8 分钟前</span></span>
+        </a>
+        <a class="forum-list-row" data-forum-topic data-category="开发实践" data-replies="12" data-unread="true" data-mine="false" data-activity="3" data-new="1" href="forum-lounge.html?topic=tool">
+          <div class="forum-topic-main"><small><i class="category-dot dot-orange"></i>开发实践 <span>·</span> 工具设计</small><strong>一个小工具的结果区，应该放在哪里？</strong><div class="forum-topic-tags"><span>产品体验</span><span>交互</span></div><span class="forum-mobile-activity">周末造物 · 22 分钟前有新回复</span></div>
+          <span class="forum-participants" aria-label="参与讨论：周、鹭"><i>周</i><i>鹭</i><span>+2</span></span>
+          <span class="forum-reply-count"><b>12</b><small>回复</small></span><span class="forum-view-count">864</span><span class="forum-activity"><i>周</i><span>22 分钟前</span></span>
+        </a>
+        <a class="forum-list-row" data-forum-topic data-category="设计与前端" data-replies="9" data-unread="false" data-mine="false" data-activity="2" data-new="0" href="forum-lounge.html?topic=photo">
+          <div class="forum-topic-main"><small><i class="category-dot dot-green"></i>设计与前端 <span>·</span> 影像观察</small><strong>真实图片会改变页面的阅读顺序吗？</strong><div class="forum-topic-tags"><span>摄影</span><span>编辑设计</span></div><span class="forum-mobile-activity">鹭 · 1 小时前有新回复</span></div>
+          <span class="forum-participants" aria-label="参与讨论：鹭、林"><i>鹭</i><i>林</i><span>+1</span></span>
+          <span class="forum-reply-count"><b>9</b><small>回复</small></span><span class="forum-view-count">532</span><span class="forum-activity"><i>林</i><span>1 小时前</span></span>
+        </a>
+        <a class="forum-list-row" data-forum-topic data-category="作品反馈" data-replies="6" data-unread="false" data-mine="false" data-activity="1" data-new="0" href="forum-lounge.html?topic=portfolio">
+          <div class="forum-topic-main"><small><i class="category-dot dot-purple"></i>作品反馈 <span>·</span> 界面观察</small><strong>把作品集首页的内容顺序重新排了一遍</strong><div class="forum-topic-tags"><span>案例分享</span></div><span class="forum-mobile-activity">代码山 · 2 小时前有新回复</span></div>
+          <span class="forum-participants" aria-label="参与讨论：代码山、林"><i>代</i><i>林</i><span>+3</span></span>
+          <span class="forum-reply-count"><b>6</b><small>回复</small></span><span class="forum-view-count">301</span><span class="forum-activity"><i>代</i><span>2 小时前</span></span>
+        </a>
+      </div>
+      <p class="forum-empty" id="forum-empty" hidden>没有匹配的话题。</p>
+      <p class="forum-disclaimer">原创交互原型 · 话题、账号和统计信息均为虚构示例</p>
+    </div>
+  </main>
+</body>
+</html>

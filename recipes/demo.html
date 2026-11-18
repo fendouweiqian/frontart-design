@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111412">
+  <meta name="description" content="查看 FrontArt 设计配方的参考规律、原创演示和可复制提示词。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Noto+Serif+SC:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="detail.css">
+  <link rel="stylesheet" href="detail-prototype.css">
+  <title>设计配方 / FrontArt Design</title>
+</head>
+<body class="recipe-detail-page">
+  <header class="site-header">
+    <a class="wordmark" href="../index.html#top" aria-label="FrontArt 首页"><span class="mark">F</span><span>frontart<span class="wordmark-dot">.</span></span></a>
+    <nav class="main-nav" aria-label="当前位置"><a href="../recipes.html">配方库</a><span aria-hidden="true">/</span><span id="detail-category">设计配方</span></nav>
+    <a class="header-cta" href="../recipes.html">全部配方 <span aria-hidden="true">↗</span></a>
+  </header>
+  <main id="detail-main">
+    <section class="detail-heading">
+      <a class="detail-back" href="../recipes.html">← 返回配方库</a>
+      <p class="section-index" id="detail-index">FRONTART RECIPE / 01</p>
+      <h1 id="detail-name">设计配方</h1>
+      <p class="detail-summary" id="detail-summary"></p>
+      <div class="detail-tags" id="detail-tags"></div>
+      <div class="detail-actions"><a class="detail-demo-link" id="detail-demo-open" href="#" target="_blank" rel="noopener">立即体验 Demo <span aria-hidden="true">↗</span></a><button class="detail-prompt-link" id="detail-copy-prompt" type="button">复制调用示例 <span aria-hidden="true">↓</span></button></div>
+    </section>
+    <section class="preview-section" aria-labelledby="preview-title">
+      <div class="preview-toolbar"><div><span id="preview-kind">CLICKABLE SITE PROTOTYPE</span><h2 id="preview-title">可点击网站原型</h2></div><div class="preview-tools"><span id="preview-size">RESPONSIVE / INTERACTIVE</span><span class="preview-status">完整页面浏览</span></div></div>
+      <div class="demo-launch">
+        <div class="demo-launch-copy"><span>INTERACTIVE PROTOTYPE</span><h3>先看效果，再回到这里拆解规律。</h3><p>这是一个可直接操作的完整页面示例；从首页或列表进入二级内容，沿着真实浏览路径体验。</p></div>
+        <a id="preview-open" href="#" target="_blank" rel="noopener">进入交互 Demo <span aria-hidden="true">↗</span></a>
+      </div>
+      <p class="preview-flow" id="preview-flow"></p>
+      <p class="preview-caption" id="preview-caption"></p>
+    </section>
+    <section class="detail-content">
+      <div class="detail-principles">
+        <p class="section-index">01 / VISUAL LANGUAGE</p>
+        <h2>保留它的<br><em>视觉逻辑。</em></h2>
+        <p id="detail-principle-summary"></p>
+        <dl id="detail-principles"></dl>
+        <div class="source-block"><span>REFERENCE</span><a id="detail-source" target="_blank" rel="noreferrer"></a><small id="detail-evidence"></small></div>
+      </div>
+      <aside class="prompt-block" id="prompt-block">
+        <div class="prompt-head"><span>02 / READY TO USE</span><span id="prompt-recipe-id"></span></div>
+        <h2>用一句话调用这张配方。</h2>
+        <p>安装 Skill 后，不需要重复描述布局和配色。把产品名称、目标用户和核心任务填入这句调用示例，Skill 会读取对应配方并完成页面设计。</p>
+        <pre id="detail-prompt"></pre>
+        <button class="copy-prompt" id="copy-prompt" type="button">复制调用示例</button>
+      </aside>
+    </section>
+    <section class="detail-next"><span>CONTINUE EXPLORING</span><a href="../recipes.html">回到配方库，发现另一种视觉方法 <b aria-hidden="true">↗</b></a></section>
+  </main>
+  <footer class="site-footer"><a class="wordmark" href="../index.html#top"><span class="mark">F</span><span>frontart<span class="wordmark-dot">.</span></span></a><span>视觉不是装饰，是一连串有根据的决定。</span><a href="../skill/SKILL.md">查看 Skill ↗</a><small>© 2026 FRONTART DESIGN</small></footer>
+  <script src="../app.js" defer></script>
+  <script src="detail.js" defer></script>
+</body>
+</html>

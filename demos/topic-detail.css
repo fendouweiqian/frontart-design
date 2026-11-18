@@ -1,0 +1,26 @@
+.topic-demo .tieba-top{grid-template-columns:1fr auto auto}
+.topic-detail-back,.topic-detail-exit{font-size:12px;color:#4e637d}
+.topic-demo main.tieba-detail-layout{max-width:1440px;display:grid;grid-template-columns:220px minmax(0,680px) 300px;gap:30px;padding:24px 22px 70px}
+.detail-topic-left{display:grid;align-content:start;gap:8px;padding-top:10px}
+.detail-topic-left a{padding:12px;color:#495669;font-size:12px}
+.detail-topic-main{background:#fff;border:1px solid #e8eaee;border-radius:8px;min-width:0}
+.detail-topic-crumb{padding:19px 23px;border-bottom:1px solid #edf0f2;color:#858d97;font-size:11px}
+.detail-topic-main>article{padding:24px 23px}
+.detail-topic-main>article .topic-category{font-size:11px;color:#356cf6}
+.detail-topic-main>article h1{font-size:25px;line-height:1.45;margin:12px 0}
+.detail-topic-main>article .topic-author-line{color:#9199a3;font-size:11px}
+.detail-topic-main>article>p{font-size:14px;line-height:1.9;color:#444b55;margin:26px 0}
+.detail-topic-main>article .topic-stat{border-top:1px solid #edf0f2;padding-top:17px;color:#8b939f;font-size:11px}
+.detail-topic-replies{border-top:8px solid #f3f4f6;padding:25px 23px 35px}
+.detail-topic-replies h2{font-size:18px;margin:0 0 20px}
+.detail-topic-replies article{padding:17px 0;border-top:1px solid #edf0f2}
+.detail-topic-replies article b{font-size:12px}
+.detail-topic-replies article p{font-size:13px;line-height:1.8;color:#59616b}
+.detail-topic-replies article small{font-size:10px;color:#9aa3ae}
+.detail-topic-replies form{border-top:1px solid #edf0f2;padding-top:23px;margin-top:12px}
+.detail-topic-replies label{display:block;font-size:12px;margin-bottom:9px}
+.detail-topic-replies textarea{width:100%;border:1px solid #dbe1e8;padding:12px;resize:vertical;font-size:13px}
+.detail-topic-replies button{margin-top:10px;border:0;background:#356cf6;color:#fff;padding:10px 17px;border-radius:20px;font-size:12px}
+.detail-topic-right p{font-size:11px;line-height:1.7;color:#717b88}
+@media(max-width:1050px){.topic-demo main.tieba-detail-layout{grid-template-columns:150px minmax(0,1fr)}.detail-topic-right{display:none}}
+@media(max-width:700px){.topic-demo .tieba-top{grid-template-columns:auto 1fr;padding:0 13px}.topic-detail-back{justify-self:end}.topic-detail-exit{display:none}.topic-demo main.tieba-detail-layout{display:block;padding:10px 0 40px}.detail-topic-left{display:none}.detail-topic-main{border-radius:0;border-left:0;border-right:0}.detail-topic-main>article h1{font-size:21px}.detail-topic-main>article>p{font-size:14px}}
