@@ -46,7 +46,7 @@ GitHub 仓库：<https://github.com/fendouweiqian/frontart-design>。
 Codex 用户可在新对话中输入 `$skill-installer`，再说明“从 GitHub 仓库 `fendouweiqian/frontart-design` 安装 `skill/`”；也可以使用安装脚本：
 
 ```powershell
-python <CODEX_HOME>/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo fendouweiqian/frontart-design --path skill
+python <CODEX_HOME>/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo fendouweiqian/frontart-design --path skill --name frontart-design
 ```
 
 安装后若 Skill 列表没有立即更新，重启 Codex 或新开对话。安装后的用户不需要复制完整设计规范，直接用一句话指定 `$frontart-design`、配方名称和产品任务即可。
