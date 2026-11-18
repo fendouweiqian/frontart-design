@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="取景框是一个面向摄影爱好者的原创主题讨论社区原型。" />
+    <title>取景框 | 摄影主题社区</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="topbar">
+        <a class="brand" href="#/" aria-label="取景框首页">
+          <span class="brand-mark" aria-hidden="true">◒</span>
+          <span>取景框</span>
+          <span class="brand-note">PHOTO COMMONS</span>
+        </a>
+        <nav class="top-actions" aria-label="全局导航">
+          <a href="#/" class="nav-link is-active">主题</a>
+          <a href="#/topic/contact-sheet" class="nav-link">作品交流</a>
+          <button class="text-button" id="aboutButton" type="button">关于社区</button>
+        </nav>
+      </header>
+
+      <main id="app" tabindex="-1"></main>
+
+      <footer class="site-footer">
+        <span>取景框 / 原创交互样例</span>
+        <span class="footer-rule" aria-hidden="true"></span>
+        <span>内容均为虚构，用于展示社区浏览流程</span>
+      </footer>
+    </div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <dialog class="about-dialog" id="aboutDialog">
+      <button class="icon-button dialog-close" id="closeAbout" type="button" aria-label="关闭关于社区">×</button>
+      <p class="eyebrow">ABOUT THE COMMONS</p>
+      <h2>让每一次按下快门，都有地方继续讨论。</h2>
+      <p>取景框是面向摄影爱好者的原创论坛原型。这里的主题、人物和数据都是虚构内容，页面展示的是「浏览主题 → 进入讨论 → 回复 → 返回目录」这条核心路径。</p>
+      <button class="button button-dark" id="dialogBack" type="button">回到主题目录</button>
+    </dialog>
+    <script src="app.js"></script>
+  </body>
+</html>

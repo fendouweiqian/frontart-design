@@ -51,7 +51,13 @@ python <CODEX_HOME>/skills/.system/skill-installer/scripts/install-skill-from-gi
 
 安装后若 Skill 列表没有立即更新，重启 Codex 或新开对话。安装后的用户不需要复制完整设计规范，直接用一句话指定 `$frontart-design`、配方名称和产品任务即可。
 
-完成 GitHub 仓库创建后，建议采用 MIT License，并保留每种第三方素材自己的许可说明。当前没有执行 GitHub 发布、域名配置、DNS 或 OSS 部署。
+仓库已发布到 GitHub：<https://github.com/fendouweiqian/frontart-design>，默认分支为 `main`。建议采用 MIT License，并保留每种第三方素材自己的许可说明；官网仍可独立使用 OSS 静态发布。
+
+安装脚本按 `--path` 的目录名决定本地文件夹名，因此从 `skill/` 安装时目录可能叫 `skill`；Skill 的调用名以 `skill/SKILL.md` 的 `name: frontart-design` 为准。需要目录名与调用名一致时可使用：
+
+```powershell
+python <CODEX_HOME>/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo fendouweiqian/frontart-design --path skill --name frontart-design
+```
 
 ## 验收范围
 
