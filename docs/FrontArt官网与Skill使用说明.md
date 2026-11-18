@@ -1,6 +1,6 @@
 # FrontArt 官网与 Skill 使用说明
 
-当前交付为本地可预览的 MVP，未创建 GitHub 仓库，未绑定域名，也未部署线上。官网地址 `frontart.fendouweiqian.top` 仍是计划中的 MVP 地址，不代表已上线。
+当前交付为可本地预览的 MVP，Skill 源码已公开发布到 GitHub：`https://github.com/fendouweiqian/frontart-design`。官网尚未绑定生产域名或部署 OSS，`frontart.fendouweiqian.top` 仍是计划中的地址，不代表已上线。
 
 ## 浏览风格配方
 
