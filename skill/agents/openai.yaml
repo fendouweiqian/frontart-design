@@ -1,0 +1,5 @@
+interface:
+  display_name: "FrontArt Design"
+  short_description: "用可验证的视觉配方设计有辨识度的网站和手机原型"
+  brand_color: "#c5f45f"
+  default_prompt: "用 $frontart-design 按一张视觉配方，为我的产品实现可交互的网站或手机原型。"

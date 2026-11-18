@@ -14,7 +14,7 @@
 
 ## 使用 Skill
 
-Skill 源文件位于 `skill/SKILL.md`，完整复制 `skill/` 目录到所用 Agent 的 Skills 目录。安装后可在新对话中用 `$frontart-design` 显式调用，也可以让 Agent 根据任务自动匹配。GitHub 仓库发布后，Codex 用户可用 `$skill-installer` 从仓库的 `skill/` 路径安装；安装完成后新开对话或重启 Agent，再执行一句话调用。
+Skill 源文件位于 `skill/SKILL.md`，公开仓库为 [fendouweiqian/frontart-design](https://github.com/fendouweiqian/frontart-design)。Codex 用户在新对话中输入 `$skill-installer`，说明“从 GitHub 仓库 `fendouweiqian/frontart-design` 安装 `skill/`”；安装完成后新开对话或重启 Agent，再执行一句话调用。也可以手动把 `skill/` 复制到 Agent 的 Skills 目录。
 
 Skill 会先读项目和真实任务，再搜索 `skill/references/recipes/catalog.json`，选取一至三个互补配方并说明如何适配。它覆盖 Web UI 与平台中立手机原型，不要求每次机械产出三套方案；只有用户要求探索或方向确有不确定性时才比较多个选项。
 

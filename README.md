@@ -22,6 +22,7 @@ python -m http.server 4173
 - `styles.css`、`catalog.css`、`app.js`：官网与配方库的共用视觉和数据渲染。
 - `demos/`：12 条配方对应的可点击网站或 H5 原型；每条至少包含首页/列表与一层内容详情或操作页。
 - `skill/SKILL.md`：Agent Skill 定义。
+- `skill/agents/openai.yaml`：ChatGPT/Codex 中显示的 Skill 名称和默认调用文案。
 - `skill/references/recipes/index.md`：可读配方索引。
 - `skill/references/recipes/catalog.json`：结构化配方资料。
 - `skill/references/recipe-template.md`：新增配方的证据和字段要求。
@@ -38,7 +39,17 @@ python -m http.server 4173
 
 ## Skill 使用
 
-将 `skill/` 下的 Skill 目录安装到 Agent 支持的 Skills 目录即可。安装后可直接使用 `$frontart-design` 调用，例如：`用 $frontart-design，按「社区论坛目录」风格，为摄影爱好者设计并实现一个可交互的社区网站，核心任务是浏览主题并回复。`。GitHub 仓库发布后，Codex 用户也可通过 `$skill-installer` 指定仓库中的 `skill/` 路径安装。
+GitHub 仓库：<https://github.com/fendouweiqian/frontart-design>。
+
+安装后可直接使用 `$frontart-design` 调用，例如：`用 $frontart-design，按「社区论坛目录」风格，为摄影爱好者设计并实现一个可交互的社区网站，核心任务是浏览主题并回复。`。
+
+Codex 用户可在新对话中输入 `$skill-installer`，再说明“从 GitHub 仓库 `fendouweiqian/frontart-design` 安装 `skill/`”；也可以使用安装脚本：
+
+```powershell
+python <CODEX_HOME>/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo fendouweiqian/frontart-design --path skill
+```
+
+安装后若 Skill 列表没有立即更新，重启 Codex 或新开对话。安装后的用户不需要复制完整设计规范，直接用一句话指定 `$frontart-design`、配方名称和产品任务即可。
 
 完成 GitHub 仓库创建后，建议采用 MIT License，并保留每种第三方素材自己的许可说明。当前没有执行 GitHub 发布、域名配置、DNS 或 OSS 部署。
 
