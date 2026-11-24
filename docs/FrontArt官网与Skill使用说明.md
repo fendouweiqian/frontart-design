@@ -1,6 +1,6 @@
 # FrontArt 官网与 Skill 使用说明
 
-当前交付为可本地预览的 MVP，Skill 源码已公开发布到 GitHub：`https://github.com/fendouweiqian/frontart-design`。官网尚未绑定生产域名或部署 OSS，`frontart.fendouweiqian.top` 仍是计划中的地址，不代表已上线。
+官网已发布：<https://frontart.fendouweiqian.top/>。Skill 源码公开在 [fendouweiqian/frontart-design](https://github.com/fendouweiqian/frontart-design)。网站部署在阿里云中国香港 OSS，使用独立存储桶 `frontart-design-site`；2026-11-24 已通过 HTTPS 检查首页、配方库、配方详情和论坛 Demo 的双层页面。
 
 ## 浏览风格配方
 
@@ -22,6 +22,8 @@ Skill 会先读项目和真实任务，再搜索 `skill/references/recipes/catal
 
 可直接打开 `index.html`，也可在 PowerShell 项目目录启动 `python -m http.server 4173` 后访问 `http://localhost:4173/`。本地静态预览无需构建和安装依赖。
 
+线上域名的 Let's Encrypt 证书由人工签发并绑定至 OSS，当前没有自动续期。现有证书到期日为 2027-02-22；到期前需重新签发、更新 OSS 域名证书，并复查 HTTPS 访问。
+
 ## 当前范围
 
-首批配方数为 12：首页展示 6 条精选，二级页面提供完整搜索和分类；每张配方有三级详情页和双层可点击 Demo。手机原型保持平台中立。图片来自外部 Unsplash 图片地址（包括 `photo-1470770841072-f978cf4d019e`、`photo-1497366754035-f200968a6e72`、`photo-1503602642458-232111445657`、`photo-1526170375885-4d8ecf77b99f`、`photo-1524578271613-d550eacf6090` 和 `photo-1542291026-7eec264c27ff`），图片内容与商品文案均为展示示例，不代表真实商品。离线访问或来源站变更时可能无法显示；正式部署前应核对许可并固化资产。WordPress 主题目录公开评价数据已记录，但未取得活跃安装量，因此不声称它们按下载量排名。X 与 Linux.do 已于 2026-11-04 通过公开页面核对首页主要结构；Demo 是原创内容和简化功能的交互原型，不宣称与来源站逐像素相同。具体 WordPress 演示页尚未完成当次视觉核对。
+首批配方数为 12：首页展示 6 条精选，二级页面提供完整搜索和分类；每张配方有三级详情页和双层可点击 Demo。手机原型保持平台中立。图片来自外部 Unsplash 图片地址（包括 `photo-1470770841072-f978cf4d019e`、`photo-1497366754035-f200968a6e72`、`photo-1503602642458-232111445657`、`photo-1526170375885-4d8ecf77b99f`、`photo-1524578271613-d550eacf6090` 和 `photo-1542291026-7eec264c27ff`），图片内容与商品文案均为展示示例，不代表真实商品。离线访问或来源站变更时可能无法显示；仍需核对素材许可并评估是否固化资产。WordPress 主题目录公开评价数据已记录，但未取得活跃安装量，因此不声称它们按下载量排名。X 与 Linux.do 已于 2026-11-04 通过公开页面核对首页主要结构；Demo 是原创内容和简化功能的交互原型，不宣称与来源站逐像素相同。具体 WordPress 演示页尚未完成当次视觉核对。

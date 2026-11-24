@@ -4,6 +4,8 @@ FrontArt 是一套帮助 AI 编写有辨识度、有依据且可实际操作的�
 
 项目覆盖桌面网站、Web 产品和平台中立的通用手机原型。设计配方从公开网站、设计主题和视觉传统中提炼规律；不复制品牌标识、页面文案、专属图片或未公开实现。
 
+官网：<https://frontart.fendouweiqian.top/>。可在线浏览配方库、复制一句话调用示例，并打开交互 Demo。
+
 ## 本地预览
 
 纯静态 HTML/CSS/JavaScript，无需安装依赖。可直接打开 `index.html`，也可在 PowerShell 中运行：
@@ -35,7 +37,7 @@ python -m http.server 4173
 - 配方卡提供两个入口：点击“体验 Demo”直接打开完整可操作页面；点击“查看配方”进入三级详情页，查看来源规律、视觉拆解和提示词。
 - 详情页首屏可直接“立即体验 Demo”或“复制调用示例”；页面下方展示安装 Skill 后可直接发送的一句话调用。Demo 桌面端右下角、手机端顶栏提供可收起的调用示例面板，浏览时可查看和复制。
 - 提示词包含对应 Demo 的页面路径，要求 Skill 为客户产品交付同类网站或 H5 原型。页面结构和视觉规律可复用；内容、素材和具体效果会随产品事实改变。
-- 外部字体与示例照片使用远程公开资源。正式发布前应检查服务可用性、素材许可和本地固化需求。
+- 外部字体与示例照片使用远程公开资源。上线后仍需检查服务可用性、素材许可和本地固化需求。
 
 ## Skill 使用
 
@@ -51,7 +53,7 @@ python <CODEX_HOME>/skills/.system/skill-installer/scripts/install-skill-from-gi
 
 安装后若 Skill 列表没有立即更新，重启 Codex 或新开对话。安装后的用户不需要复制完整设计规范，直接用一句话指定 `$frontart-design`、配方名称和产品任务即可。
 
-仓库已发布到 GitHub：<https://github.com/fendouweiqian/frontart-design>，默认分支为 `main`。建议采用 MIT License，并保留每种第三方素材自己的许可说明；官网仍可独立使用 OSS 静态发布。
+仓库已发布到 GitHub：<https://github.com/fendouweiqian/frontart-design>，默认分支为 `main`。项目代码采用 MIT License，第三方素材仍遵循各自许可；官网部署在阿里云中国香港 OSS，并通过 HTTPS 访问。
 
 安装脚本按 `--path` 的目录名决定本地文件夹名，因此从 `skill/` 安装时目录可能叫 `skill`；Skill 的调用名以 `skill/SKILL.md` 的 `name: frontart-design` 为准。需要目录名与调用名一致时可使用：
 
