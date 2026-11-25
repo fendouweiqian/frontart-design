@@ -9,7 +9,7 @@
   .feed-demo .prompt-dock-panel{right:auto;left:0;max-height:calc(100vh - 160px)}
 }
 .prompt-dock-panel{width:min(600px,calc(100vw - 32px));max-height:min(720px,calc(100vh - 110px))}
-.prompt-dock-panel pre{max-height:420px;font:16px/1.8 "Microsoft YaHei","PingFang SC","Noto Sans SC",Arial,sans-serif;letter-spacing:0}
+.prompt-dock-panel pre{max-height:420px;font:16px/1.8 "Microsoft YaHei","PingFang SC","Microsoft YaHei",Arial,sans-serif;letter-spacing:0}
 @media(max-width:600px){.prompt-dock-panel{max-height:calc(100vh - 88px)}.prompt-dock-panel pre{font-size:16px;line-height:1.75;max-height:48vh}}
 @media(max-width:600px){.prompt-dock-toggle{min-height:42px;padding:0 12px;font-size:13px}.prompt-dock-toggle span{font-size:17px}.prompt-dock-panel>p{font-size:15px;line-height:1.75}}
 @media(max-width:700px){

@@ -1,4 +1,4 @@
-body.feed-demo{min-height:100vh;background:#fff;color:#0f1419;font-family:Arial,"Noto Sans SC","Microsoft YaHei",sans-serif}
+body.feed-demo{min-height:100vh;background:#fff;color:#0f1419;font-family:Arial,"Microsoft YaHei","Microsoft YaHei",sans-serif}
 body.feed-demo .feed-mobile-head{display:none}
 body.feed-demo main.feed-layout{width:min(1280px,100%);max-width:1280px;margin:0 auto;display:grid;grid-template-columns:260px minmax(0,600px) minmax(280px,350px);gap:30px;align-items:start;padding:0}
 body.feed-demo main.feed-layout>aside.feed-navigation{position:sticky;top:0;height:100vh;min-height:650px;padding:8px 0 18px;display:flex;flex-direction:column;align-items:flex-start}
