@@ -7,6 +7,7 @@ const output = path.join(root, "dist");
 const files = [
   "index.html", "recipes.html", "demo.html", "styles.css", "catalog.css",
   "app.js", "favicon.svg", "favicon.ico", "robots.txt", "sitemap.xml",
+  "e443fa1683b91bade13543d59f4e9983.txt",
   "assets", "demos", "recipes", "skill",
 ];
 

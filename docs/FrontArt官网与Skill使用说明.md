@@ -4,7 +4,9 @@
 
 ## 浏览风格配方
 
-官网有三层页面：首页介绍 FrontArt 并展示少量精选；从“浏览全部配方”进入二级配方库页；点配方卡进入三级单条详情页。
+官网有三层页面：首页首屏可直接进入 Skill 安装区，安装区展示可复制的 Codex 安装语句和安装后调用示例，并展示少量精选；从“浏览全部配方”进入二级配方库页；点配方卡进入三级单条详情页。
+
+首页右侧章节导航可直接跳到“安装 Skill”“设计理念”“精选配方”“工作流程”，当前章节会高亮；下滑后显示“顶部”入口。窄屏点右下角“目录”展开相同导航，选择章节后自动收起。
 
 在二级配方库页按分类或关键词搜索配方，搜索覆盖名称、类型、参考来源、用途和视觉标签。键盘按 `/` 可聚焦搜索框。
 
@@ -14,7 +16,7 @@
 
 ## 使用 Skill
 
-Skill 源文件位于 `skill/SKILL.md`，公开仓库为 [fendouweiqian/frontart-design](https://github.com/fendouweiqian/frontart-design)。官网首页的 Skill 区域展示完整仓库地址，首页、配方库和详情页的页脚也可进入 GitHub。Codex 用户在新对话中输入 `$skill-installer`，说明“从 GitHub 仓库 `fendouweiqian/frontart-design` 安装 `skill/`”；安装完成后新开对话或重启 Agent，再执行一句话调用。也可以手动把 `skill/` 复制到 Agent 的 Skills 目录。
+Skill 源文件位于 `skill/SKILL.md`，公开仓库为 [fendouweiqian/frontart-design](https://github.com/fendouweiqian/frontart-design)。首页导航和首屏箭头均可进入紧随首屏的安装区；点击“复制安装语句”，在 Codex 新对话中发送，由 `$skill-installer` 从该仓库的 `skill/` 目录安装。安装完成后新开对话或重启 Agent，再执行一句话调用。也可以手动把 `skill/` 复制到 Agent 的 Skills 目录。
 
 Skill 会先读项目和真实任务，再搜索 `skill/references/recipes/catalog.json`，选取一至三个互补配方并说明如何适配。它覆盖 Web UI 与平台中立手机原型，不要求每次机械产出三套方案；只有用户要求探索或方向确有不确定性时才比较多个选项。
 

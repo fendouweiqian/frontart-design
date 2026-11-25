@@ -137,3 +137,50 @@ document.addEventListener("keydown", (event) => {
 renderRecipes();
 const catalogTotal = document.querySelector("#catalog-total");
 if (catalogTotal) catalogTotal.textContent = String(recipes.length);
+
+document.querySelectorAll("[data-copy-target]").forEach((button) => {
+  button.addEventListener("click", async () => {
+    const text = document.getElementById(button.dataset.copyTarget)?.textContent?.trim();
+    if (!text) return;
+    try {
+      await navigator.clipboard.writeText(text);
+      button.textContent = "已复制";
+    } catch {
+      button.textContent = "复制失败，请选中语句复制";
+    }
+  });
+});
+
+const sectionRail = document.querySelector(".section-rail");
+if (sectionRail) {
+  const toggle = sectionRail.querySelector(".rail-toggle");
+  const links = [...sectionRail.querySelectorAll('.rail-links a[href^="#"]')];
+  const sections = links.map((link) => ({link, section: document.querySelector(link.getAttribute("href"))}));
+  const closeRail = () => {
+    sectionRail.classList.remove("is-open");
+    toggle.setAttribute("aria-expanded", "false");
+  };
+  const updateRail = () => {
+    sectionRail.classList.toggle("has-scrolled", window.scrollY > 400);
+    const current = [...sections].reverse().find(({section}) => section && section.offsetTop <= window.scrollY + window.innerHeight * 0.4);
+    for (const {link} of sections) {
+      if (link === current?.link) link.setAttribute("aria-current", "location");
+      else link.removeAttribute("aria-current");
+    }
+  };
+  toggle.addEventListener("click", () => {
+    const open = sectionRail.classList.toggle("is-open");
+    toggle.setAttribute("aria-expanded", String(open));
+  });
+  sectionRail.addEventListener("click", (event) => {
+    if (event.target.closest("a")) closeRail();
+  });
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") closeRail();
+  });
+  document.addEventListener("click", (event) => {
+    if (!sectionRail.contains(event.target)) closeRail();
+  });
+  window.addEventListener("scroll", updateRail, {passive: true});
+  updateRail();
+}
