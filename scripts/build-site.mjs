@@ -16,7 +16,7 @@ for (const file of files) {
   await cp(path.join(root, file), path.join(output, file), { recursive: true, force: true });
 }
 
-let homepage = await readFile(path.join(root, "index.html"), "utf8");
+let homepage = (await readFile(path.join(root, "index.html"), "utf8")).replace(/\r\n/g, "\n");
 const replacements = [
   ['<link rel="stylesheet" href="styles.css">', `<style>${await readFile(path.join(root, "styles.css"), "utf8")}</style>`],
   ['<link rel="stylesheet" href="catalog.css" media="print" onload="this.media=\'all\'">\n  <noscript><link rel="stylesheet" href="catalog.css"></noscript>', `<style>${await readFile(path.join(root, "catalog.css"), "utf8")}</style>`],
