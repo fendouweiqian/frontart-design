@@ -14,7 +14,7 @@
 
 ## 使用 Skill
 
-Skill 源文件位于 `skill/SKILL.md`，公开仓库为 [fendouweiqian/frontart-design](https://github.com/fendouweiqian/frontart-design)。Codex 用户在新对话中输入 `$skill-installer`，说明“从 GitHub 仓库 `fendouweiqian/frontart-design` 安装 `skill/`”；安装完成后新开对话或重启 Agent，再执行一句话调用。也可以手动把 `skill/` 复制到 Agent 的 Skills 目录。
+Skill 源文件位于 `skill/SKILL.md`，公开仓库为 [fendouweiqian/frontart-design](https://github.com/fendouweiqian/frontart-design)。官网首页的 Skill 区域展示完整仓库地址，首页、配方库和详情页的页脚也可进入 GitHub。Codex 用户在新对话中输入 `$skill-installer`，说明“从 GitHub 仓库 `fendouweiqian/frontart-design` 安装 `skill/`”；安装完成后新开对话或重启 Agent，再执行一句话调用。也可以手动把 `skill/` 复制到 Agent 的 Skills 目录。
 
 Skill 会先读项目和真实任务，再搜索 `skill/references/recipes/catalog.json`，选取一至三个互补配方并说明如何适配。它覆盖 Web UI 与平台中立手机原型，不要求每次机械产出三套方案；只有用户要求探索或方向确有不确定性时才比较多个选项。
 
@@ -26,4 +26,4 @@ Skill 会先读项目和真实任务，再搜索 `skill/references/recipes/catal
 
 ## 当前范围
 
-首批配方数为 12：首页展示 6 条精选，二级页面提供完整搜索和分类；每张配方有三级详情页和双层可点击 Demo。手机原型保持平台中立。图片来自外部 Unsplash 图片地址（包括 `photo-1470770841072-f978cf4d019e`、`photo-1497366754035-f200968a6e72`、`photo-1503602642458-232111445657`、`photo-1526170375885-4d8ecf77b99f`、`photo-1524578271613-d550eacf6090` 和 `photo-1542291026-7eec264c27ff`），图片内容与商品文案均为展示示例，不代表真实商品。离线访问或来源站变更时可能无法显示；仍需核对素材许可并评估是否固化资产。WordPress 主题目录公开评价数据已记录，但未取得活跃安装量，因此不声称它们按下载量排名。X 与 Linux.do 已于 2026-11-04 通过公开页面核对首页主要结构；Demo 是原创内容和简化功能的交互原型，不宣称与来源站逐像素相同。具体 WordPress 演示页尚未完成当次视觉核对。
+首批配方数为 12：首页展示 6 条精选，二级页面提供完整搜索和分类；每张配方有三级详情页和双层可点击 Demo。手机原型保持平台中立。首页首屏照片已压缩为本地 AVIF，其他示例图片来自外部 Unsplash 图片地址（包括 `photo-1470770841072-f978cf4d019e`、`photo-1497366754035-f200968a6e72`、`photo-1503602642458-232111445657`、`photo-1526170375885-4d8ecf77b99f`、`photo-1524578271613-d550eacf6090` 和 `photo-1542291026-7eec264c27ff`），图片内容与商品文案均为展示示例，不代表真实商品。其他示例图片在离线访问或来源站变更时可能无法显示；仍需核对素材许可并评估是否固化资产。WordPress 主题目录公开评价数据已记录，但未取得活跃安装量，因此不声称它们按下载量排名。X 与 Linux.do 已于 2026-11-04 通过公开页面核对首页主要结构；Demo 是原创内容和简化功能的交互原型，不宣称与来源站逐像素相同。具体 WordPress 演示页尚未完成当次视觉核对。
